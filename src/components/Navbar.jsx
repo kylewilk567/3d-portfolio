@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav 
-    className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    className={`${styles.paddingX} w-full items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link 
           to="/"
@@ -26,6 +26,9 @@ const Navbar = () => {
             <span className='sm:block hidden'>| Software Engineer</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+          <a className="max-[800px]:hidden text-blue-500 hover:text-blue-600 text-[18px]"
+            href="/src/assets/Wilkinson_Kyle_Resume_23.pdf" 
+            download="Wilkinson_Kyle_Resume.pdf">Resum&eacute;</a>
           {navLinks.map((link) => (
             <li key={link.id}
             className={`${
